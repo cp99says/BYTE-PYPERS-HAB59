@@ -1,14 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const path = require('path');
-const crypto = require('crypto');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const GridFsStorage = require('multer-gridfs-storage');
 const Grid = require('gridfs-stream');
 const methodOverride = require('method-override');
-const user = require('./model');
-const { resolveSoa } = require('dns');
+const User = require('./model');
+
 
 const app = express();
 
@@ -30,9 +28,9 @@ conn.once('open', function () {
     gfs.collection('uploads')
 })
 
-//create storage engine
 const storage = new GridFsStorage({
-    url: 'mongodb://localhost:27017',
+     url: 'mongodb://localhost:27017',
+    // url:'mongodb+srv://chetan_mongo:chetan_pwd@cluster0-rdowg.azure.mongodb.net/<dbname>?retryWrites=true&w=majority',
     file: (req, file) => {
         return new Promise((resolve, reject) => {
 
@@ -48,15 +46,14 @@ const storage = new GridFsStorage({
 
 const upload = multer({ storage });
 
-//routes
-// get, desc:- uploads file tp db
+
 app.get('/', (req, res) => {
     res.render('index')
 })
 
-//@route- post, it uploads to  
 app.post('/upload', upload.single('file'), (req, res) => {
     // const data=await user.create(req.body)
+    //const dtaa=user.create({req.body})
     var myData = new user(req.body);
     myData.save()
     res.json({
@@ -120,7 +117,16 @@ app.get('/image/:filename', (req, res) => {
       }
       else
       {
-        
+        files.map(file=>{
+          if(files.contentType === 'image/jpeg' || image === 'image/png')
+          {
+            file.isImage=true
+          }
+          else{
+            file.isImage=false
+          }
+        })
+        res.render('index',{files:files})
       }
    
 
