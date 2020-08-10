@@ -34,6 +34,11 @@ body {
     }
 }
 
+.table .thead-dark th {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
 @media (max-width: 960px) {
     .partner {
         .powered {
