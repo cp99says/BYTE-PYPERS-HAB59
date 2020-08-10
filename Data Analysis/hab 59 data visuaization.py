@@ -149,7 +149,7 @@ vendordata
 
 # In[69]:
 
-
+v_items=vendor_details.items
 l_n=[]
 l_p=[]
 l_q=[]
