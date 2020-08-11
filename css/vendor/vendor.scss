@@ -25,6 +25,16 @@ body {
         button {
             margin-bottom: 1rem;
         }
+        form {
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            label {
+                margin: 1rem 0;
+                width: fit-content;
+                height: fit-content;
+            }
+        }
     }
     h1 {
         background-color: #000000;
@@ -39,8 +49,8 @@ body {
 }
 
 .table .thead-dark th {
-    background-color: #000000 !important;
-    border-color: #000000 !important;
+    background-color: #363636;
+    color: #ffffff;
 }
 
 @media (max-width: 960px) {
