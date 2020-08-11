@@ -2,10 +2,7 @@ const express = require('express')
 const app = express();
 const mongoose = require('mongoose')
 const User = require('./model')
-
-
 const multer=require('multer')
-
 
 const multerStorage=multer.diskStorage({
     destination:(req,file,cb)=>{
@@ -22,15 +19,10 @@ const upload=multer({
 
 })
 const uploadUserphoto=upload.single('image')
-
-
 app.use(express.json())
-
-
 mongoose.connect('mongodb://localhost:27017', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false }).then(()=>{
     console.log('db connected')
 }).catch(err=>{console.log(err)})
-
 
 const filterObj = (obj, ...allowedFields) => {
     const newObj = {};
@@ -40,8 +32,6 @@ const filterObj = (obj, ...allowedFields) => {
     return newObj;
   };
 
-
-
 app.get('/get', async (req,res)=>{
     const vendor=await User.find();
     res.status(200).json({
@@ -49,7 +39,6 @@ app.get('/get', async (req,res)=>{
         vendor
     })
 })
-
 // app.post('/post',async (req, res) => {
 
 
@@ -65,35 +54,14 @@ app.get('/get', async (req,res)=>{
 
 app.patch('/patch/:id',uploadUserphoto,async (req,res)=>{
        
-    const filterbody=filterObj(req.body,'nameOfProduct','quantity','price')
-    if(req.file) filterbody.image=req.file.originalname   
-
-      const newUser = await User.findByIdAndUpdate(filterbody)
-      res.json(newUser)
-      console.log(req.file)
-      console.log(req.body)  
+    
+      const newUser = await User.findByIdAndUpdate(req.params.id,req.body)
+      res.json({newUser})
+       console.log(req.file)
+       console.log(req.body)  
 
 })
-    // try {
-    //     const filterbody=filterObj(req.body,req.file)
-    //     if(req.file) filterbody.image=req.file.originalname   
-
-
-    //     const updated_data = await User.findByIdAndUpdate(filterbody);
     
-    //     res.status(200).json({
-    //       status: 'success',
-    //       data: {
-    //         updated_data
-    //       }
-    //     });
-    //   } catch (err) {
-    //     res.status(404).json({
-    //       status: 'fail',
-    //       message: err
-    //     });
-    //   }
-    // })
 
 app.delete('/delete/:id',async (req,res)=>{
     try{
@@ -102,7 +70,6 @@ app.delete('/delete/:id',async (req,res)=>{
             status:'success',
             message:'data deleted'
         })
-
     }
     catch(err){
         res.json(404).json(err)
