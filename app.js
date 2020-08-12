@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const User = require('./models/model_vendor')
 const multer=require('multer')
 const hd=require('./routes/routes')
-
+const cors=require('cors')
 
 const multerStorage=multer.diskStorage({
     destination:(req,file,cb)=>{
@@ -22,6 +22,8 @@ const upload=multer({
 })
 const uploadUserphoto=upload.single('image')
 app.use(express.json())
+app.use(cors())
+
 
  mongoose.connect('mongodb://localhost:27017',{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false }).then(()=>{
           console.log('db connected')
