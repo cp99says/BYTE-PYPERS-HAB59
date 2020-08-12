@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express();
 const mongoose = require('mongoose')
-const User = require('./model')
+const User = require('./models/model_vendor')
 const multer=require('multer')
+const hd=require('./routes/routes')
+
 
 const multerStorage=multer.diskStorage({
     destination:(req,file,cb)=>{
@@ -20,9 +22,13 @@ const upload=multer({
 })
 const uploadUserphoto=upload.single('image')
 app.use(express.json())
-mongoose.connect('mongodb://localhost:27017', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false }).then(()=>{
-    console.log('db connected')
-}).catch(err=>{console.log(err)})
+
+ mongoose.connect('mongodb://localhost:27017',{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false }).then(()=>{
+          console.log('db connected')
+      }).catch(err=>{console.log(err)})
+//  mongoose.connect('mongodb+srv://chetan_mongo:chetan_pwd@cluster0-rdowg.azure.mongodb.net/vendor?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false }).then(()=>{
+//      console.log('db connected')
+//  }).catch(err=>{console.log(err)})
 
 const filterObj = (obj, ...allowedFields) => {
     const newObj = {};
@@ -32,6 +38,8 @@ const filterObj = (obj, ...allowedFields) => {
     return newObj;
   };
 
+app.use('/hd',hd)
+
 app.get('/get', async (req,res)=>{
     const vendor=await User.find();
     res.status(200).json({
@@ -39,19 +47,6 @@ app.get('/get', async (req,res)=>{
         vendor
     })
 })
-// app.post('/post',async (req, res) => {
-
-
-//     const filterbody=filterObj(req.body,'nameOfProduct','quantity','price')
-//     if(req.file) filterbody.image=req.file.originalname   
-   
-//        const a=await User.create(filterbody)
-//     //    console.log(a)
-//        res.status(201).json(a)       
-    
-   
-// })
-
 app.patch('/patch/:id',uploadUserphoto,async (req,res)=>{
        
     
@@ -60,9 +55,7 @@ app.patch('/patch/:id',uploadUserphoto,async (req,res)=>{
        console.log(req.file)
        console.log(req.body)  
 
-})
-    
-
+})    
 app.delete('/delete/:id',async (req,res)=>{
     try{
         await User.findByIdAndDelete(req.params.id)
@@ -74,11 +67,9 @@ app.delete('/delete/:id',async (req,res)=>{
     catch(err){
         res.json(404).json(err)
     }
-
 })
 
 app.post('/imagee',uploadUserphoto,async(req,res)=>{
-
 
     const filterbody=filterObj(req.body,'nameOfProduct','quantity','price')
     if(req.file) filterbody.image=req.file.originalname   
@@ -90,4 +81,6 @@ app.post('/imagee',uploadUserphoto,async(req,res)=>{
 
 })
 
-app.listen(3000, (() => { console.log('server started at port 3500') }))
+
+const port = process.env.PORT || 3000;
+app.listen(port, (() => { console.log(`server started at port ${port}`) }))
