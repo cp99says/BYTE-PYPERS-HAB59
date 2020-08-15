@@ -274,7 +274,7 @@
                                                 <div class="summary text-left">
                                                     <h6>Order Summary:</h6>
                                                     <ul class="list-group">
-                                                        <li class="list-group-item">Maggi
+                                                        <li class="list-group-item" id="asd">Maggi
                                                             <div class="summaryBtns">
                                                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                                                     <option value="1">1</option>
@@ -335,16 +335,16 @@
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <form>
+                                                <form enctype="multipart/form-data" id="pickup">
                                                     <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Name">
-                                                        <input type="text" class="form-control" placeholder="Mobile Number">
+                                                        <input type="text" class="form-control" id="slotName" placeholder="Name" name="name">
+                                                        <input type="text" class="form-control" id="slotMobile" placeholder="Mobile Number" name="contact_number">
                                                         <div class="container">
                                                             <div class="row justify-content-center">
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group">
                                                                         <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Select Date" />
+                                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" id="slotDate" placeholder="Select Date" name="date" />
                                                                             <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                                                 <div class="input-group-text"><i class="fa fa-calendar"></i>
                                                                                 </div>
@@ -361,23 +361,24 @@
                                                                 </script>
                                                             </div>
                                                         </div>
-                                                        <select class="custom-select">
+                                                        <select class="custom-select" id="slotTime" name="time">
                                                             <option selected>Select Time Slot</option>
-                                                            <option value="1">01:00 P.M.</option>
-                                                            <option value="2">02:00 P.M.</option>
-                                                            <option value="3">03:00 P.M.</option>
-                                                            <option value="3">04:00 P.M.</option>
-                                                            <option value="3">05:00 P.M.</option>
-                                                            <option value="3">06:00 P.M.</option>
-                                                            <option value="3">07:00 P.M.</option>
-                                                            <option value="3">08:00 P.M.</option>
+                                                            <option>01:00 P.M.</option>
+                                                            <option>02:00 P.M.</option>
+                                                            <option>03:00 P.M.</option>
+                                                            <option>04:00 P.M.</option>
+                                                            <option>05:00 P.M.</option>
+                                                            <option>06:00 P.M.</option>
+                                                            <option>07:00 P.M.</option>
+                                                            <option>08:00 P.M.</option>
                                                         </select>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="submit" class="btn btn-warning">Book Slot</button>
+                                                <button type="submit" id="slotSubmit" class="btn btn-warning">Book
+                                                    Slot</button>
                                             </div>
                                         </div>
                                     </div>
@@ -403,7 +404,7 @@
                                                 <div class="summary text-left">
                                                     <h6>Order Summary:</h6>
                                                     <ul class="list-group">
-                                                        <li class="list-group-item">Maggi
+                                                        <li class="list-group-item" id="wakanda">Maggi
                                                             <div class="summaryBtns">
                                                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                                                     <option value="1">1</option>
@@ -505,7 +506,8 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="submit" class="btn btn-warning">Book Slot</button>
+                                                <button type="submit" id="deliverySubmit" class="btn btn-warning">Book
+                                                    Slot</button>
                                             </div>
                                         </div>
                                     </div>
@@ -523,6 +525,7 @@
 
 
 
+    <script src="js/store.js"></script>
     <script src="js/script.js"></script>
 </body>
 
