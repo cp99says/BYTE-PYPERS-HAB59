@@ -3,12 +3,12 @@ $("#customFile").on("change", function () {
   $(this).next(".custom-file-label").html(fileName);
 });
 
-var requestOptions = {
-  method: "GET",
-  redirect: "follow",
-};
+// var requestOptions = {
+//   method: "GET",
+//   redirect: "follow",
+// };
 
-fetch("https://byte-pypers.herokuapp.com/get", requestOptions)
-  .then((response) => response.text())
-  .then((result) => console.log(result))
-  .catch((error) => console.log("error", error));
+// fetch("https://byte-pypers.herokuapp.com/get", requestOptions)
+//   .then((response) => response.json())
+//   .then((result) => console.log(result))
+//   .catch((error) => console.log("error", error));

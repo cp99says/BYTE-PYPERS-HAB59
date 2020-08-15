@@ -21,7 +21,7 @@ body {
 }
 
 .partner {
-  max-width: 80vw;
+  min-width: 80vw;
   min-height: 15rem;
   -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
@@ -30,31 +30,15 @@ body {
   margin: 1rem auto;
 }
 
-.partner .vendorWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  overflow-x: auto !important;
-  white-space: nowrap !important;
+.partner .cardWrapper {
+  margin: 1rem auto;
+  max-width: 50rem;
 }
 
-.partner .vendorWrapper .vendorCard {
-  border-radius: 1rem;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  margin: 1rem 1rem;
+.partner .cardWrapper .row .col-md-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -63,15 +47,93 @@ body {
           justify-content: center;
 }
 
-.partner .vendorWrapper .vendorCard .card-body {
+.partner .cardWrapper .row .col-md-4 img {
+  max-width: 6rem;
+}
+
+.partner .cardWrapper .row .col-md-8 .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partner .cardWrapper .row .col-md-8 .card-body .prodName {
+  text-align: left;
+}
+
+.partner .cardWrapper .row .col-md-8 .card-body .prodName .card-title {
+  margin: 0 !important;
+}
+
+.partner .cardWrapper .row .col-md-8 .card-body .prodName .price {
+  margin: 0.5rem !important;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  font-weight: 800;
+}
+
+.partner .cardWrapper .row .col-md-8 .card-body .prodName .quantity {
+  margin: 0 !important;
+}
+
+.partner .cardWrapper .row .col-md-8 .card-body .prodSelect label {
+  margin: 0.5rem 0;
+}
+
+.partner .storeBtnWrapper {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: 1rem auto;
+  text-align: center;
 }
 
-.partner .vendorWrapper .vendorCard img {
+.partner .storeBtnWrapper button {
+  margin: 0.5rem 1rem;
+}
+
+.partner .storeBtnWrapper .modal .modal-dialog .modal-content .modal-body .summary ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.partner .storeBtnWrapper .modal .modal-dialog .modal-content .modal-body .summary ul li select {
+  width: 4rem;
+}
+
+.partner .storeBtnWrapper .modal .modal-dialog .modal-content .modal-body form .form-group input {
   margin: 0.5rem auto;
-  width: 7rem;
+}
+
+.partner .storeBtnWrapper .modal .modal-dialog .modal-content .modal-body form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.partner .storeBtnWrapper .modal .modal-dialog .modal-content .modal-body form .form-group .container .row .col-sm-6 .form-group {
+  margin-bottom: 0.5rem;
+}
+
+.partner .storeBtnWrapper .modal .modal-dialog .modal-content .modal-body form .form-group .container .row .col-sm-6 .form-group .date input {
+  margin: 0;
 }
 
 .partner .powered {
@@ -136,6 +198,21 @@ body {
 @media (max-width: 960px) {
   .partner {
     max-width: 90vw;
+  }
+  .partner .cardWrapper {
+    max-width: 95%;
+  }
+  .partner .cardWrapper .row .col-md-8 .prodName h5 {
+    font-size: 1rem;
+  }
+  .partner .cardWrapper .row .col-md-8 .prodName p {
+    font-size: 0.8rem;
+  }
+  .partner .cardWrapper .row .col-md-8 .prodSelect select {
+    font-size: 1rem;
+  }
+  .partner .cardWrapper .row .col-md-8 .prodSelect .custom-control label {
+    font-size: 0.8rem;
   }
   .partner .powered .col-sm-10 {
     margin: 0;

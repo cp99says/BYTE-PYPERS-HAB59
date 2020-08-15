@@ -8,7 +8,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/user/user.css">
+    <script src="https://kit.fontawesome.com/4e9a685ceb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js" integrity="sha512-qSnlnyh7EcD3vTqRoSP4LYsy2yVuqqmnkM9tW4dWo6xvAoxuVXyM36qZK54fyCmHoY1iKi9FJAUZrlPqmGNXFw==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+
+    <link rel="stylesheet" href="css/store/store.css">
 </head>
 
 <body>
@@ -38,62 +43,484 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="partner">
-                            <h1>Stores Near You </h1>
-                            <div class="vendorWrapper">
-                                <div class="card vendorCard text-center shadow">
-                                    <img src="images/basket.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Hyper Store</h5>
-                                        <a href="#" class="btn btn-warning" role="button" aria-pressed="true">Visit
-                                            Store</a>
+                            <h1>Hyper Store</h1>
+                            <div class="card mb-3 cardWrapper shadow">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/products/battery.webp" class="card-img" alt="...">
                                     </div>
-                                </div>
-                                <div class="card vendorCard text-center shadow">
-                                    <img src="images/basket.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Hyper Store</h5>
-                                        <button type="button" class="btn btn-warning" disabled>CLOSED</button>
-                                    </div>
-                                </div>
-                                <div class="card vendorCard text-center shadow">
-                                    <img src="images/basket.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Hyper Store</h5>
-                                        <a href="#" class="btn btn-warning" role="button" aria-pressed="true">Visit
-                                            Store</a>
-                                    </div>
-                                </div>
-                                <div class="card vendorCard text-center shadow">
-                                    <img src="images/basket.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Hyper Store</h5>
-                                        <a href="#" class="btn btn-warning" role="button" aria-pressed="true">Visit
-                                            Store</a>
-                                    </div>
-                                </div>
-                                <div class="card vendorCard text-center shadow">
-                                    <img src="images/basket.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Hyper Store</h5>
-                                        <button type="button" class="btn btn-warning" disabled>CLOSED</button>
-                                    </div>
-                                </div>
-                                <div class="card vendorCard text-center shadow">
-                                    <img src="images/basket.svg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Hyper Store</h5>
-                                        <button type="button" class="btn btn-warning" disabled>CLOSED</button>
-                                    </div>
-                                </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="prodName">
+                                                <h5 class="card-title">Batteries Double Pack</h5>
+                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 32</p>
+                                                <p class="card-text"><small class="text-muted">Quantity Available :
+                                                        100</small></p>
+                                            </div>
+                                            <div class="prodSelect">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected>Quantity</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                </select>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                    <label class="custom-control-label" for="customCheck1">Add to
+                                                        Cart</label>
+                                                </div>
+                                            </div>
 
-
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="card mb-3 cardWrapper shadow">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/products/maggi.webp" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="prodName">
+                                                <h5 class="card-title">Maggi Super Saver</h5>
+                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
+                                                <p class="card-text quantity"><small class="text-muted">Quantity
+                                                        Available :
+                                                        100</small></p>
+
+                                            </div>
+                                            <div class="prodSelect">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected>Quantity</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                </select>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                    <label class="custom-control-label" for="customCheck2">Add to
+                                                        Cart</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 cardWrapper shadow">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/products/jam.webp" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="prodName">
+                                                <h5 class="card-title">Fruit Jam</h5>
+                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
+                                                <p class="card-text quantity"><small class="text-muted">Quantity
+                                                        Available :
+                                                        100</small></p>
+
+                                            </div>
+                                            <div class="prodSelect">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected>Quantity</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                </select>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                    <label class="custom-control-label" for="customCheck3">Add to
+                                                        Cart</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 cardWrapper shadow">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/products/chocos.webp" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="prodName">
+                                                <h5 class="card-title">Chocos</h5>
+                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
+                                                <p class="card-text quantity"><small class="text-muted">Quantity
+                                                        Available :
+                                                        100</small></p>
+
+                                            </div>
+                                            <div class="prodSelect">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected>Quantity</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                </select>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                    <label class="custom-control-label" for="customCheck4">Add to
+                                                        Cart</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 cardWrapper shadow">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/products/oreo.webp" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="prodName">
+                                                <h5 class="card-title">Oreo Biscuit</h5>
+                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
+                                                <p class="card-text quantity"><small class="text-muted">Quantity
+                                                        Available :
+                                                        100</small></p>
+
+                                            </div>
+                                            <div class="prodSelect">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected>Quantity</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                </select>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                    <label class="custom-control-label" for="customCheck5">Add to
+                                                        Cart</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3 cardWrapper shadow">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="images/products/cooker.webp" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <div class="prodName">
+                                                <h5 class="card-title">Pressure Cooker</h5>
+                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
+                                                <p class="card-text quantity"><small class="text-muted">Quantity
+                                                        Available :
+                                                        100</small></p>
+
+                                            </div>
+                                            <div class="prodSelect">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected>Quantity</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="3">5</option>
+                                                </select>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                                    <label class="custom-control-label" for="customCheck6">Add to
+                                                        Cart</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="storeBtnWrapper">
+                                <!-- Button slot modal -->
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+                                    Book Pickup Slot
+                                </button>
+
+                                <!--Slot  Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Select Pickup Slot</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 0; padding: 0;">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="summary text-left">
+                                                    <h6>Order Summary:</h6>
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Maggi
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+
+                                                        </li>
+                                                        <li class="list-group-item">Oreo
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+
+                                                        </li>
+                                                        <li class="list-group-item">Coffee Beans
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+
+                                                        </li>
+                                                        <li class="list-group-item">Milk
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Name">
+                                                        <input type="text" class="form-control" placeholder="Mobile Number">
+                                                        <div class="container">
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Select Date" />
+                                                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                                                <div class="input-group-text"><i class="fa fa-calendar"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <script type="text/javascript">
+                                                                    $(function() {
+                                                                        $('#datetimepicker4').datetimepicker({
+                                                                            format: 'L'
+                                                                        });
+                                                                    });
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                        <select class="custom-select">
+                                                            <option selected>Select Time Slot</option>
+                                                            <option value="1">01:00 P.M.</option>
+                                                            <option value="2">02:00 P.M.</option>
+                                                            <option value="3">03:00 P.M.</option>
+                                                            <option value="3">04:00 P.M.</option>
+                                                            <option value="3">05:00 P.M.</option>
+                                                            <option value="3">06:00 P.M.</option>
+                                                            <option value="3">07:00 P.M.</option>
+                                                            <option value="3">08:00 P.M.</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-warning">Book Slot</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Button delivery modal -->
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#delivery">
+                                    Request Home Delivery
+                                </button>
+
+                                <!--Slot  Modal -->
+                                <div class="modal fade" id="delivery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Schedule Delivery</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 0; padding: 0;">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="summary text-left">
+                                                    <h6>Order Summary:</h6>
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Maggi
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item">Oreo
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item">Coffee Beans
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                        <li class="list-group-item">Milk
+                                                            <div class="summaryBtns">
+                                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="3">4</option>
+                                                                    <option value="3">5</option>
+                                                                </select>
+                                                                <button type="button" class="btn btn-danger">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Name">
+                                                        <input type="text" class="form-control" placeholder="Mobile Number">
+                                                        <textarea name="add" id="address" placeholder="Address"></textarea>
+                                                        <div class="container">
+                                                            <div class="row justify-content-center">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                                                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" placeholder="Select Date" />
+                                                                            <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                                                                                <div class="input-group-text"><i class="fa fa-calendar"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <script type="text/javascript">
+                                                                    $(function() {
+                                                                        $('#datetimepicker4').datetimepicker({
+                                                                            format: 'L'
+                                                                        });
+                                                                    });
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                        <select class="custom-select">
+                                                            <option selected>Select Time Slot</option>
+                                                            <option value="1">01:00 P.M.</option>
+                                                            <option value="2">02:00 P.M.</option>
+                                                            <option value="3">03:00 P.M.</option>
+                                                            <option value="3">04:00 P.M.</option>
+                                                            <option value="3">05:00 P.M.</option>
+                                                            <option value="3">06:00 P.M.</option>
+                                                            <option value="3">07:00 P.M.</option>
+                                                            <option value="3">08:00 P.M.</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-warning">Book Slot</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
 
     <script src="js/script.js"></script>

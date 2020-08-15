@@ -21,31 +21,104 @@ body {
 }
 
 .partner {
-    max-width: 80vw;
+    min-width: 80vw;
     min-height: 15rem;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
     border-radius: 1rem;
     text-align: left;
     margin: 1rem auto;
-    .vendorWrapper {
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto !important;
-        white-space: nowrap !important;
-        .vendorCard {
-            border-radius: 1rem;
-            min-width: fit-content;
-            margin: 1rem 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .card-body {
-                width: fit-content;
+    .cardWrapper {
+        margin: 1rem auto;
+        max-width: 50rem;
+        .row {
+            .col-md-4 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    max-width: 6rem;
+                }
             }
-            img {
-                margin: 0.5rem auto;
-                width: 7rem;
+            .col-md-8 {
+                .card-body {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .prodName {
+                        text-align: left;
+                        .card-title {
+                            margin: 0 !important;
+                        }
+                        .price {
+                            margin: 0.5rem !important;
+                            margin-left: 0 !important;
+                            margin-bottom: 0 !important;
+                            font-weight: 800;
+                        }
+                        .quantity {
+                            margin: 0 !important;
+                        }
+                    }
+                    .prodSelect {
+                        label {
+                            margin: 0.5rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .storeBtnWrapper {
+        width: fit-content;
+        margin: 1rem auto;
+        text-align: center;
+        button {
+            margin: 0.5rem 1rem;
+        }
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    .modal-body {
+                        .summary {
+                            ul {
+                                li {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    select {
+                                        width: 4rem;
+                                    }
+                                }
+                            }
+                        }
+                        form {
+                            .form-group {
+                                input {
+                                    margin: 0.5rem auto;
+                                }
+                                textarea {
+                                    width: 100%;
+                                    padding: 0.5rem 1rem;
+                                }
+                                .container {
+                                    .row {
+                                        .col-sm-6 {
+                                            .form-group {
+                                                margin-bottom: 0.5rem;
+                                                .date {
+                                                    input {
+                                                        margin: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -96,6 +169,31 @@ body {
 @media (max-width: 960px) {
     .partner {
         max-width: 90vw;
+        .cardWrapper {
+            max-width: 95%;
+            .row {
+                .col-md-8 {
+                    .prodName {
+                        h5 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+                    .prodSelect {
+                        select {
+                            font-size: 1rem;
+                        }
+                        .custom-control {
+                            label {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .powered {
             .col-sm-10 {
                 margin: 0;
