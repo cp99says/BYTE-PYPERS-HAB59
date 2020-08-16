@@ -12,10 +12,6 @@ m=['01','02','03','04','05','06','07','08','09','10','11','12']
 m_names=['January','February','March','April','May','June','July','August','September',
          'October','November','December']
 
-transaction=de.userdata.groupby('User ID') 
-transaction_vendor=transaction.get_group('b100') 
-#transaction_vendor.head(7)
-
 
 # In[24]:
 
@@ -111,3 +107,4 @@ def monthly_sales(user_id):
         p_fig.append(pie_plot(user_bought_items[month][0],user_bought_items[month][1],mon_name))
         
     return b_fig,p_fig
+
