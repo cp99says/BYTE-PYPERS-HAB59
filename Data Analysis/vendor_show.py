@@ -1,4 +1,8 @@
 from vendor import listed_products,monthly_sales
+import os
+
+if os.path.exists('v.html'):
+    os.remove("v.html") 
 
 lp1,lp2=listed_products('v100')
 ms1,ms2=monthly_sales('v100')

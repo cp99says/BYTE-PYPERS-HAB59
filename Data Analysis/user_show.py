@@ -1,4 +1,8 @@
 from user import monthly_sales
+import os
+
+if os.path.exists('u.html'):
+    os.remove("u.html")  
 
 ms1,ms2=monthly_sales('b100')
 
