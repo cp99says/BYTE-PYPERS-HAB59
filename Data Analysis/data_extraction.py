@@ -4,7 +4,7 @@ import pymongo as p
 # In[2]:
 
 
-client=p.MongoClient("mongodb://localhost:27017/")
+client=p.MongoClient("mongodb+srv://swarnabha:swarnabha_db@cluster0.4igvr.mongodb.net/BytePyper?retryWrites=true&w=majority")
 
 
 # ## Testing
@@ -19,7 +19,7 @@ client=p.MongoClient("mongodb://localhost:27017/")
 
 
 ven=client['vendor']
-ven_details=ven.details
+ven_details=ven.vendors
 # for d in ven_details.find():
 #     print(d)
 
@@ -54,16 +54,16 @@ ven_details=ven.details
 
 import pandas as pd
 userdata=pd.DataFrame(columns=['User ID','Vendor ID','Date','Month','Item List'])
-userdata
+
 
 
 # In[8]:
 
 
-user_details=client['buyer']
+user_details=client['user']
 d_user_name=[]
 d_userID=[]
-u_d=user_details.details
+u_d=user_details.user_regs
 for nm in u_d.find():
    d_user_name.append(nm['name'])
    d_userID.append(nm['buyer ID'])
@@ -75,7 +75,7 @@ for nm in u_d.find():
 
 
 
-u_t=user_details.transaction
+u_t=user_details.transactions
 t_user_ID=[]
 t_vendor_ID=[]
 t_day=[]
@@ -142,7 +142,7 @@ vendordata
 # In[13]:
 
 
-v_items=vendor_details.items
+v_items=vendor_details.list_items
 l_n=[]
 l_p=[]
 l_q=[]
@@ -150,7 +150,7 @@ l_t=[]
 v_ID=[]
 for v_i in v_items.find():
    v_ID.append(v_i['vendor ID'])
-   for it in v_i['item']:
+   for it in v_i['Items']:
         v_n=[]
         v_p=[]
         v_q=[]
@@ -179,5 +179,5 @@ vendordata['Item']=l_n
 vendordata['Price']=l_p
 vendordata['Quantity']=l_q
 vendordata['Total']=l_t
-#print(vendordata.head(10))
-#print(userdata.head(10))
+#print(vendordata.head())
+#print(userdata.head())
