@@ -23,5 +23,7 @@ document.getElementById("slotSubmit").addEventListener('click', () => {
     fetch("https://byte-pypers-auth.herokuapp.com/customer/select_slot", requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
+        .then(alert('Slot Successfully Booked'))
+        .then(document.getElementById('pickup').reset())
         .catch(error => console.log('error', error));
 });

@@ -100,45 +100,30 @@
                 <div class="partner">
                     <h1>Customer Slots</h1>
                     <div class="powered">
-                        <table class="table table-responsive-lg">
+                        <table class="table table-responsive-lg" id="dyanmicSlots">
                             <thead class="thead-dark">
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Mobile</th>
-                                    <th scope="col">Day</th>
+                                    <th scope="col">Date</th>
                                     <th scope="col">Time</th>
-
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Ram</td>
-                                    <td>12346798</td>
-                                    <td>Monday</td>
-                                    <td>4:00 P.M.</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Ram</td>
-                                    <td>12346798</td>
-                                    <td>Monday</td>
-                                    <td>4:00 P.M.</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Ram</td>
-                                    <td>12346798</td>
-                                    <td>Monday</td>
-                                    <td>4:00 P.M.</td>
-                                </tr>
+                                <div class="d-flex justify-content-center">
+                                    <div class="spinner-border" role="status" id="spinner" style="margin-bottom: 1rem;">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="row justify-content-center">
             <div class="col-lg-12">
                 <div class="partner">
@@ -202,8 +187,7 @@
             </div>
         </div>
     </div>
-
-    <script src="js/script.js"></script>
+    <script src="js/slotsdisplay.js"></script>
 </body>
 
 </html>
