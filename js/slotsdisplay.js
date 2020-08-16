@@ -12,7 +12,7 @@ fetch("https://byte-pypers-auth.herokuapp.com/customer/display_slot", requestOpt
     .then(result => {
         hideSpinner();
         var slotResult = JSON.parse(result);
-        console.log(slotResult)
+        // console.log(slotResult)
 
         var tableLength = slotResult.data.length;
 
@@ -24,10 +24,10 @@ fetch("https://byte-pypers-auth.herokuapp.com/customer/display_slot", requestOpt
             mobiles = slotResult.data[i].contact_number;
             dates = slotResult.data[i].date;
             times = slotResult.data[i].time;
-            console.log(names);
-            console.log(mobiles);
-            console.log(dates);
-            console.log(times);
+            // console.log(names);
+            // console.log(mobiles);
+            // console.log(dates);
+            // console.log(times);
 
 
 

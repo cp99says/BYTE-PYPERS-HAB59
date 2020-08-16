@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.partner {
+  height: 100vh;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 1rem;
+  text-align: left;
+  margin: 1rem auto;
+}
+
+.partner .powered {
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.partner .powered .timeWrapper {
+  margin: 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner .powered .timeWrapper h5 {
+  margin: 0 1rem;
+}
+
+.partner .powered .timeWrapper select {
+  width: 8rem;
+  margin-right: 1rem;
+}
+
+.partner .powered .dayWrapper {
+  margin: 1rem auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner .powered .dayWrapper h5 {
+  margin: 0 1rem;
+}
+
+.partner .powered .dayWrapper select {
+  width: 8rem;
+  margin-right: 1rem;
+}
+
+.partner .powered .custom-file {
+  text-align: left;
+}
+
+.partner .powered .col-sm-10 {
+  margin: 1rem 0;
+}
+
+.partner .powered button {
+  margin-bottom: 1rem;
+}
+
+.partner h1 {
+  background-color: #000000;
+  color: #ffffff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  font-weight: 300;
+}
+
+.table .thead-dark th {
+  background-color: #363636;
+  color: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .partner .powered .timeWrapper select {
+    width: 6rem;
+  }
+  .partner .powered .dayWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partner .powered .dayWrapper select {
+    margin: 0.5rem 0;
+  }
+  .partner .powered .col-sm-10 {
+    margin: 0;
+  }
+  .partner .powered button {
+    margin: 1rem 0;
+  }
+}
+/*# sourceMappingURL=report.css.map */

@@ -1,30 +1,32 @@
-const prodBtn = document.getElementById('productSubmit')
-prodBtn.addEventListener('click', (e) => {
+document.getElementById('productSubmit').addEventListener('click', (e) => {
     e.preventDefault();
-    var imageLoc = document.getElementById('imgupload').value;
-    console.log(imageLoc);
-    var productName = document.getElementById('prodName').value;
-    console.log(productName);
-    var productQuant = document.getElementById('prodQuantity').value;
-    console.log(productQuant);
-    var productPrice = document.getElementById('prodPrice').value;
-    console.log(productPrice);
-    var formdata = new FormData();
-    formdata.append(
-        "image", imageLoc
-    );
-    formdata.append("nameOfProduct", productName);
-    formdata.append("quantity", productQuant);
-    formdata.append("price", productPrice);
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    // var name = document.getElementById('prodName').value;
+    // var quantity = document.getElementById('prodQuantity').value;
+    // var price = document.getElementById('prodPrice').value;
+
+    var raw = JSON.stringify({
+        nameOfProduct: document.getElementById('prodName').value,
+        quantity: document.getElementById('prodQuantity').value,
+        price: document.getElementById('prodPrice').value
+    })
+
 
     var requestOptions = {
-        method: "POST",
-        body: formdata,
-        redirect: "follow",
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
     };
 
-    fetch("https://byte-pypers.herokuapp.com/imagee", requestOptions)
-        .then((response) => response.text())
-        .then((result) => console.log(result))
-        .catch((error) => console.log("error", error));
-});
+    fetch("https://byte-pypers.herokuapp.com/list_items", requestOptions)
+        .then(response => response.text())
+        .then(result => {
+            alert('Product Added !!');
+        }).then(() => {
+            document.getElementById('addProd').reset();
+        })
+        .catch(error => console.log('error', error));
+})
