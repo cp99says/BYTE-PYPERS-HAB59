@@ -1,11 +1,18 @@
 const mongoose=require('mongoose')
 
 const schema=mongoose.Schema({
+    
+    name:{
+        type:String
+    },        
     address:{
         type:String
     },
     phoneNumber:{
         type:Number
+    },
+    time:{
+        type:String
     }
 })
 

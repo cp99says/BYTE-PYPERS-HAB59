@@ -11,7 +11,7 @@ const schema = mongoose.Schema({
         validate: [validator.isEmail, 'Email is invalid Please provide a valid email']
     },
     password: {
-        type: String,
+        type: String,       
         select:false
     },
     passwordConfirm: {
@@ -31,8 +31,5 @@ schema.pre('save', async function (next) {
 
 })
 
-schema.methods.correctPassword= async function(candidatePassword, userPassword){
-    return await bcrypt.compare(candidatePassword,userPassword)
-}
 
 module.exports = mongoose.model('user_reg', schema)

@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
-const homeDel = require('../models/model_homedelivery')
-
+const mongoose=require('mongoose')
+const homeDel=require('./../models/model_homedelivery')
 
 app.get('/display_deliveries',async (req, res) => {
     const data = await homeDel.find();
