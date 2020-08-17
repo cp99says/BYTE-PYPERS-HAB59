@@ -1,5 +1,5 @@
 # 🤖BYTE-PYPERS-HAB59💻
-# HACK ATMANIRBHAR BHARAT 59 - Hackathon
+# HACK ATMANIRBHAR BHARAT 59 - Hackathon(9th-18th August)
 <p align="center">
 <img  width="400px" height="300px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/download.jpg" />
  </p><br />
