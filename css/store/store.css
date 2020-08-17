@@ -202,6 +202,9 @@ body {
   .partner .cardWrapper {
     max-width: 95%;
   }
+  .partner .cardWrapper .row .col-md-4 img {
+    margin: 1rem auto;
+  }
   .partner .cardWrapper .row .col-md-8 .prodName h5 {
     font-size: 1rem;
   }
