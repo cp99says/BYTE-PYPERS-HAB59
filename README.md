@@ -31,9 +31,9 @@
   </a>
   <a href="https://www.github.com/sd2001">
   <img align="left" width="40px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/github.png" />
-  </a>
+  </a><br />
   
-  <br />
+ <hr/>
 
 
 ### PROBLEM STATEMENTS:
@@ -42,9 +42,11 @@ After days of discussion and planning, all of our team members listed out the pr
 - A primary cause of the spread of the coronavirus, as perceived by us, originated from the markets. 
 - Often, most of the guidelines set by the government is violated by several people.Hence to combat all these common problems, we came up with such an efficient(All in One) idea,   which would  not only aid the buyers but also the vendors in terms of their health, work efficiency, time and shop-management.
 
-*As per our knowledge, this idea doesn’t exist in the Indian markets as of now. Hence the sooner it is implemented, the better it is. *
+***As per our knowledge, this idea doesn’t exist in the Indian markets as of now. Hence the sooner it is implemented, the better it is. ***
+
 
 ### TECHNOLOGY STACK:
+
 - Frontend : HTML, CSS, Bootstrap,Javascript
 
 - Backend :  MongoDB, Node.JS, Express,JS(MEN)
