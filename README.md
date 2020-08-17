@@ -52,9 +52,9 @@
 ### TECHNOLOGY STACK:
 
 > - Frontend : HTML, CSS, Bootstrap,Javascript
-
+>
 > - Backend :  MongoDB, Node.JS, Express,JS(MEN)
-
+>
 > - Data Analysis : Python(Pymongo, gunicorn, os, Pandas, Flask, dnspython and Plotly)
 
 <hr/>
