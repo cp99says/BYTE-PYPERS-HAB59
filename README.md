@@ -14,7 +14,7 @@
   <a href="https://www.linkedin.com/in/barunaha/">
   <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
-  <a href="https://www.github.com/Atimabh">
+  <a href="https:/github.com/Atimabh">
   <img align="left" width="40px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/github.png" />
   </a>
   
@@ -23,7 +23,7 @@
   <a href="https://www.linkedin.com/in/cp99says/">
   <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
-  <a href="https://www.github.com/cp99says">
+  <a href="https:/github.com/cp99says">
   <img align="left" width="40px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/github.png" />
   </a>
   
@@ -32,7 +32,7 @@
   <a href="https://www.linkedin.com/in/swarnabha-das-2001official/">
   <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
-  <a href="https://www.github.com/sd2001">
+  <a href="https:/github.com/sd2001">
   <img align="left" width="40px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/github.png" />
   </a><br />
   
