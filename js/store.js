@@ -24,6 +24,9 @@ document.getElementById("slotSubmit").addEventListener('click', () => {
         .then(response => response.text())
         .then(result => console.log(result))
         .then(alert('Slot Successfully Booked'))
-        .then(document.getElementById('pickup').reset())
+        .then(() => {
+            location.reload();
+            document.getElementById('pickup').reset();
+        })
         .catch(error => console.log('error', error));
 });

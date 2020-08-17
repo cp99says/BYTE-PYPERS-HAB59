@@ -25,8 +25,8 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only"></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only"></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -44,214 +44,80 @@
                     <div class="col-lg-12">
                         <div class="partner">
                             <h1>Hyper Store</h1>
-                            <div class="card mb-3 cardWrapper shadow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/products/battery.webp" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <div class="prodName">
-                                                <h5 class="card-title">Batteries Double Pack</h5>
-                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 32</p>
-                                                <p class="card-text"><small class="text-muted">Quantity Available :
-                                                        100</small></p>
-                                            </div>
-                                            <div class="prodSelect">
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected>Quantity</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="3">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                    <label class="custom-control-label" for="customCheck1">Add to
-                                                        Cart</label>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                            <div class="userCardWrapper" id="userStore">
+                                <div class="d-flex justify-content-center">
+                                    <div class="spinner-border" role="status" id="spinnerDelivery" style="margin-bottom: 1rem;">
+                                        <span class="sr-only">Loading...</span>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="card mb-3 cardWrapper shadow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/products/maggi.webp" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <div class="prodName">
-                                                <h5 class="card-title">Maggi Super Saver</h5>
-                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
-                                                <p class="card-text quantity"><small class="text-muted">Quantity
-                                                        Available :
-                                                        100</small></p>
-
-                                            </div>
-                                            <div class="prodSelect">
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected>Quantity</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="3">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                    <label class="custom-control-label" for="customCheck2">Add to
-                                                        Cart</label>
+                                <!-- <div class="card mb-3 cardWrapper shadow">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="images/product.svg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <div class="prodName">
+                                                    <h5 class="card-title">Batteries Double Pack</h5>
+                                                    <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 32
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Quantity Available :
+                                                            100</small></p>
+                                                </div>
+                                                <div class="prodSelect">
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Quantity</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="3">4</option>
+                                                        <option value="3">5</option>
+                                                    </select>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">Add to
+                                                            Cart</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="card mb-3 cardWrapper shadow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/products/jam.webp" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <div class="prodName">
-                                                <h5 class="card-title">Fruit Jam</h5>
-                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
-                                                <p class="card-text quantity"><small class="text-muted">Quantity
-                                                        Available :
-                                                        100</small></p>
-
-                                            </div>
-                                            <div class="prodSelect">
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected>Quantity</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="3">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                    <label class="custom-control-label" for="customCheck3">Add to
-                                                        Cart</label>
+                                </div> -->
+                                <!-- <div class="card mb-3 cardWrapper shadow">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="images/product.svg" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <div class="prodName">
+                                                    <h5 class="card-title">Batteries Double Pack</h5>
+                                                    <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 32
+                                                    </p>
+                                                    <p class="card-text"><small class="text-muted">Quantity Available :
+                                                            100</small></p>
+                                                </div>
+                                                <div class="prodSelect">
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Quantity</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="3">4</option>
+                                                        <option value="3">5</option>
+                                                    </select>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">Add to
+                                                            Cart</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
 
-                            <div class="card mb-3 cardWrapper shadow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/products/chocos.webp" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <div class="prodName">
-                                                <h5 class="card-title">Chocos</h5>
-                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
-                                                <p class="card-text quantity"><small class="text-muted">Quantity
-                                                        Available :
-                                                        100</small></p>
-
-                                            </div>
-                                            <div class="prodSelect">
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected>Quantity</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="3">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                                    <label class="custom-control-label" for="customCheck4">Add to
-                                                        Cart</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card mb-3 cardWrapper shadow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/products/oreo.webp" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <div class="prodName">
-                                                <h5 class="card-title">Oreo Biscuit</h5>
-                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
-                                                <p class="card-text quantity"><small class="text-muted">Quantity
-                                                        Available :
-                                                        100</small></p>
-
-                                            </div>
-                                            <div class="prodSelect">
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected>Quantity</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="3">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                    <label class="custom-control-label" for="customCheck5">Add to
-                                                        Cart</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card mb-3 cardWrapper shadow">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="images/products/cooker.webp" class="card-img" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <div class="prodName">
-                                                <h5 class="card-title">Pressure Cooker</h5>
-                                                <p class="card-text price">MRP: <i class="fas fa-rupee-sign"></i> 75</p>
-                                                <p class="card-text quantity"><small class="text-muted">Quantity
-                                                        Available :
-                                                        100</small></p>
-
-                                            </div>
-                                            <div class="prodSelect">
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                    <option selected>Quantity</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="3">4</option>
-                                                    <option value="3">5</option>
-                                                </select>
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                                    <label class="custom-control-label" for="customCheck6">Add to
-                                                        Cart</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
 
                             <div class="storeBtnWrapper">
@@ -524,7 +390,7 @@
 
 
 
-
+    <script src="js/userlisting.js"></script>
     <script src="js/store.js"></script>
     <script src="js/script.js"></script>
 </body>
