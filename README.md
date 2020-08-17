@@ -10,7 +10,7 @@
 
 ### TEAM MEMBERS :
 
-  <div>Atimabh Barunaha:</div><br />
+  <div>Atimabh Barunaha:</div>
   <a href="https://www.linkedin.com/in/barunaha/">
   <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
@@ -19,7 +19,7 @@
   </a>
   
   <br />
-  <br /><div>Chetan Pareek:</div><br />
+  <br /><div>Chetan Pareek:</div>
   <a href="https://www.linkedin.com/in/cp99says/">
   <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
@@ -28,7 +28,7 @@
   </a>
   
   <br />
-  <br /><div>Swarnabha Das:</div><br />
+  <br /><div>Swarnabha Das:</div>
   <a href="https://www.linkedin.com/in/swarnabha-das-2001official/">
   <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
