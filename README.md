@@ -28,7 +28,7 @@
   </a>
   
   
-  <br /><br /><div>Swarnabha Das:</div><br />
+  <br /><div>Swarnabha Das:</div><br />
   <a href="https://www.linkedin.com/in/swarnabha-das-2001official/">
   <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
