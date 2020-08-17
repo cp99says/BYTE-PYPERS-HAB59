@@ -1,6 +1,8 @@
 # 🤖BYTE-PYPERS-HAB59💻
 # HACK ATMANIRBHAR BHARAT 59 - Hackathon
-![IMAGE](https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/download.jpg)
+<p align="center">
+<img  width="400px" height="300px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/download.jpg" />
+  </p>
 ## Domain-Business App
 ## Team Name : BYTE PYPERS
 ![IMAGE](https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/mockup.png)
