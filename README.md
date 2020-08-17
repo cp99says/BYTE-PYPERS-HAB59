@@ -7,30 +7,33 @@
 
 ### TEAM MEMBERS :
 
- <div>Atimabh Barunaha
+ - <div>Atimabh Barunaha</div><br />
   <a href="https://www.linkedin.com/in/barunaha/">
-  <img align="left" alt="AB" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
+  <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
   <a href="https://www.github.com/Atimabh">
-  <img align="left" alt="AB" width="40px" src="https://icons8.com/icon/12599/github" />
+  <img align="left" width="40px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/github.png" />
   </a>
-  </div>
- <div>Chetan Pareek
+  
+  
+ - <br /><div>Chetan Pareek</div><br />
   <a href="https://www.linkedin.com/in/cp99says/">
-  <img align="left" alt="CP" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
+  <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
   <a href="https://www.github.com/cp99says">
-  <img align="left" alt="CP" width="40px" src="https://icons8.com/icon/12599/github" />
+  <img align="left" width="40px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/github.png" />
   </a>
-  </div>
- <div>Swarnabha Das
+  
+  
+ <br /><div>Swarnabha Das</div><br />
   <a href="https://www.linkedin.com/in/swarnabha-das-2001official/">
-  <img align="left" alt="SD" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
+  <img align="left" width="40px" src="https://github.com/sd2001/sd2001/blob/master/linkedin.svg" />
   </a>
   <a href="https://www.github.com/sd2001">
-  <img align="left" alt="SD" width="40px" src="https://icons8.com/icon/12599/github" />
+  <img align="left" width="40px" src="https://github.com/sd2001/BYTE-PYPERS-HAB59/blob/master/github.png" />
   </a>
-  </div>
+  
+  <br />
 
 
 ### PROBLEM STATEMENTS:
