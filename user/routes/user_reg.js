@@ -5,7 +5,7 @@ const reg_model = require('../models/user_reg_model')
 const jwt = require('jsonwebtoken')
 const bcrypt=require('bcryptjs')
 const mongoose=require('mongoose')
-const ss=require('./../models/model_ss')
+const ss=require('../models/model_ss')
    
 app.post('/signup', async (req, res) => {
     try {        

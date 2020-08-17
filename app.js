@@ -15,7 +15,7 @@ const cors=require('cors')
 
      // mongodb+srv://chetan_mongo:chetan_pwd@cluster0-rdowg.azure.mongodb.net/vendor?retryWrites=true&w=majority
 
-     mongoose.connect('mongodb://localhost:27017/user',{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false,useCreateIndex:true }).then(()=>{
+     mongoose.connect('mongodb://localhost:27017/vendor',{ useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false,useCreateIndex:true }).then(()=>{
         console.log('db connected')
     }).catch(err=>{console.log(err)}) 
 
@@ -85,12 +85,12 @@ app.delete('/delete/:id',async (req,res)=>{
 
 app.post('/imagee',uploadUserphoto,async(req,res)=>{
 
-    const filterbody=filterObj(req.body)
+    const filterbody=filterObj(req.body,'nameOfProduct','quantity','price')
     if(req.file) filterbody.image=req.file.originalname   
 
-      const newUser = await user.create(filterbody)
+      const newUser = await User.create(filterbody)
       res.json(newUser)
-      console.log(req.file)      
+      
 })
 
 app.post('/list_items',async (req,res)=>{
